@@ -124,7 +124,7 @@ namespace Command {
     padding[1];
 
     u8 bitmap[length] [[BitmapColor]];
-  };
+  } [[hex::visualize("image", bitmap)]];
 
   struct H : base<1> {
     std::assert(std::format("{}", command) == CommandCode::H, "Invalid command");
